@@ -122,6 +122,11 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+LOGIN_URL = '/accounts/login'
+
+LOGIN_REDIRECT_URL = '/tweetapp/'
+LOGOUT_REDIRECT_URL = '/tweetapp/'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
